@@ -11,6 +11,13 @@
 	<link rel="stylesheet" type="text/css" href="Hover/css/hover.css">
 	<!-- Css Style -->
 	<link rel="stylesheet" href="style.css">
+	<!-- Time Script -->
+	<script type="text/javascript">
+		function showtime(){
+		  var now=new Date();
+		  var current_time=now.toLocaleTimeString();
+		  document.getElementById('ct').innerHTML=current_time;
+		}</script>
 
 </head>
 <body style="background-color: silver;">
@@ -395,5 +402,7 @@
 	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/custom.js"></script>
+	<body onload="setInterval('showtime()',1000)
+	showtime();">
 </body>
 </html>
